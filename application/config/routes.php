@@ -76,7 +76,7 @@ $route['ARTICULOS'] = 'Servicio_controllers/articulos';
 $route['descuentos'] = 'Servicio_controllers/descuentos';
 
 $route['Clientes'] = 'Servicio_controllers/Clientes';
-$route['allclientes'] = 'Servicio_controllers/allClientes';
+$route['allClientes'] = 'Servicio_controllers/allClientes';
 $route['updateClientes'] = 'Servicio_controllers/updateClientes';
 $route['NuevosClientes'] = 'Servicio_controllers/NuevosClientes';
 
