@@ -69,15 +69,14 @@ $route['datos'] = 'datos_controller/index';
 $route['monitoreo'] = 'monitoreo_controller/index';
 
 
-
-/**********************************RUTAS DE SERVICIO REST*****************************************************/
+/**********************************RUTAS DE SERVICIO REST**********************************/
 
 
 $route['ARTICULOS'] = 'Servicio_controllers/articulos';
 $route['descuentos'] = 'Servicio_controllers/descuentos';
-//$route['ClientesMora'] = 'Servicio_controllers/ClientesMora';
-//$route['ClientesIndicadores'] = 'Servicio_controllers/ClientesIndicadores';
+
 $route['Clientes'] = 'Servicio_controllers/Clientes';
+$route['allclientes'] = 'Servicio_controllers/allClientes';
 $route['updateClientes'] = 'Servicio_controllers/updateClientes';
 $route['NuevosClientes'] = 'Servicio_controllers/NuevosClientes';
 
@@ -90,12 +89,13 @@ $route['updatePedidos'] = 'Servicio_controllers/updatePedidos';
 $route['Actividades'] = 'Servicio_controllers/Actividades';
 $route['pruebaJson'] = 'Servicio_controllers/pruebaJson';
 $route['unAgenda'] = 'Servicio_controllers/InsertAgenda';
-//$route['Agenda'] = 'Servicio_controllers/Agenda';
+
 $route['Historial'] = 'Servicio_controllers/Historial';
+$route['allHistorial'] = 'Servicio_controllers/allHistorial';
+
 $route['insertRazones'] = 'Servicio_controllers/insertRazones';
 $route['CONSECUTIVO'] = 'Servicio_controllers/CONSECUTIVO';
 
 $route['LOTES'] = 'Servicio_controllers/lotes';
 $route['uCumple'] = 'Servicio_controllers/cumple';
 $route['prueba'] = 'Servicio_controllers/prueba';
-

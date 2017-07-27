@@ -4,6 +4,7 @@ class Reportes_model extends CI_Model
     public function __construct(){
         parent::__construct();
         $this->load->database();
+        $this->load->model('servicios_model');
     }
     public function pedidos_por_vendedor($fecha1,$fecha2)
     {
@@ -29,7 +30,7 @@ class Reportes_model extends CI_Model
         //echo $fecha1;
         if ($query->num_rows()>0) {
             foreach($query->result_array() as $key){
-                $json['data'][$i]['VENDEDOR'] = '<p class="bold noMargen">'.$key['VENDEDOR']."</p>";
+                $json['data'][$i]['VENDEDOR'] = '<p class="bold noMargen">'.$this->servicios_model->nombreVem($key['VENDEDOR'])."</p>";
                 $json['data'][$i]['ENE'] = $key['ENE'];
                 $json['data'][$i]['FEB'] = $key['FEB'];
                 $json['data'][$i]['MAR'] = $key['MAR'];

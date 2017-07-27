@@ -55,56 +55,22 @@
                 </tr>
             </thead>
             <tbody class="center">
-                <?php if (!($data)) {}
+                <?php if (!($data['data'])) {}
                         else{
-                            foreach ($data as $key) {
-                                echo 
-                                "<tr>
-                                    <td class='negra'>".$key['IDPEDIDO']."</td>
-                                    <td>".$key['VENDEDOR']."</td>
-                                    <td>".$key['RESPONSABLE']."</td>
-                                    <td>".$key['CLIENTE']."</td>
-                                    <td>".$key['NOMBRE']."</td>
-                                    <td>".$key['FECHA_CREADA']."</td>
-                                    <td>".number_format($key['MONTO'],2)."</td>";
-                                switch ($key['ESTADO']) {
-                                        case '1':
-                                            $estado2 = '<i class="material-icons">check</i>';
-                                            break;
-                                        case '2':
-                                            $estado2 = '<i class="material-icons">done_all</i>';
-                                            break;
-                                        case '3':
-                                            $estado2 = '<i class="green-text material-icons">done_all</i>';
-                                            break;
-                                        case '4':
-                                            $estado2 = '<i class="red-text material-icons">done_all</i>';
-                                            break;
-                                        default:
-                                            $estado2 = 'ERROR AL OBTENER ESTADO';
-                                            break;
-                                    }
-                                    switch ($key['ESTADO']) {
-                                        case '1':
-                                            $estado = '<p class="noMargen">PENDIENTE</p>';
-                                            break;
-                                        case '2':
-                                            $estado = '<p class="noMargen">VISUALIZADO</p>';
-                                            break;
-                                        case '3':
-                                            $estado = '<p class="green-text noMargen">PROCESADO</p>';
-                                            break;
-                                        case '4':
-                                            $estado = '<p class="red-text noMargen">ANULADO</p>';
-                                            break;
-                                        default:
-                                            $estado = 'ERROR AL OBTENER ESTADO';
-                                            break;
-                                    }
-                                echo"<td class='regular'>".$estado."</td>";
-                                echo"<td class='regular'>".$estado2."</td>";
-                                echo  "<td class='regular'><a  onclick='getview(".'"'.$key['IDPEDIDO'].'"'.",".'"'.$key['NOMBRE']." ".$key['CLIENTE'].'"'.",".'"'.$key['VENDEDOR'].'"'.",".'"'.$key['ESTADO'].'"'.")' href='#' class='noHover'><i class='material-icons'>&#xE417;</i></a>
-                                </tr>";
+                            $i=0;
+                            for ($i=0; $i < count($data['data']); $i++) {
+                                    echo "<tr>
+                                            <td class='center'>".$data['data'][$i]['IDPEDIDO']."</td>
+                                            <td class='center'>".$data['data'][$i]['VENDEDOR']."</td>
+                                            <td class='center'>".$data['data'][$i]['RESPONSABLE']."</td>
+                                            <td class='center'>".$data['data'][$i]['CLIENTE']."</td>
+                                            <td class='center'>".$data['data'][$i]['NOMBRE']."</td>
+                                            <td class='center'>".$data['data'][$i]['FECHA']."</td>
+                                            <td class='center'>".$data['data'][$i]['MONTO']."</td>
+                                            <td class='center'>".$data['data'][$i]['ESTADO']."</td>
+                                            <td class='center'>".$data['data'][$i]['ESTADO2']."</td>
+                                            <td class='center'>".$data['data'][$i]['VER']."</td>
+                                        </tr>";
                             }
                         }
                  ?>
@@ -204,8 +170,9 @@
                             <th>DESCRIPCIÓN</th>
                             <th>CANTIDAD</th>
                             <th>PRECIO</th>
+                            <th>IVA</th>
+                            <th>DESCUENTO</th>
                             <th>TOTAL</th>
-                            <th>BONIFICADO</th>
                         </tr>
                     </thead>
 
