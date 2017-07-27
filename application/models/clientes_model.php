@@ -9,6 +9,7 @@ class Clientes_model extends CI_Model
 
     public function index()
     {
+        $this->db->distinct();
         $query = $this->db->get('clientes');
         if ($query->num_rows()>0) {
             return $query->result_array();

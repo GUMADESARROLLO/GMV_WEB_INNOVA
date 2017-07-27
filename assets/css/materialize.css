@@ -2481,7 +2481,7 @@ input,
 optgroup,
 select,
 textarea {
-  color: #1F0A71;
+  color: #7a2080;
   /* 1 */
   font-family:'robotoregular';
   /* 2 */
@@ -5061,7 +5061,7 @@ button.btn-floating {
 .btn-flat {
   box-shadow: none;
   background-color: transparent;
-  color: #1F0A71;
+  color: #831f82;
   cursor: pointer;
 }
 
@@ -8019,12 +8019,11 @@ input[type=range]:focus::-ms-fill-upper {
 
 .picker__date-display {
   text-align: center;
-  background-color: #6a4ad5;
+  background-color: #831f82;
   font-family: 'robotobold';
-  color: #1F0A71;
+  color: #ffffff;
   font-size: 15px;
   padding-bottom: 10px;
-
 }
 
 .picker__nav--prev:hover,
@@ -8035,7 +8034,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .picker__weekday-display {
-  background-color: #1F0A71;
+  background-color: #4f094e;
   padding: 6px;
   font-family: 'robotoregular';
   font-weight: 200;
@@ -8090,7 +8089,7 @@ color:rgba(89, 89, 89, 0.66);
 }
 
 .picker__day.picker__day--today {
-  color: #6a4ad5;
+  color: #831f82;
 }
 
 .picker__day.picker__day--today.picker__day--selected {
@@ -8108,7 +8107,7 @@ color:rgba(89, 89, 89, 0.66);
   border-radius: 50%;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
-  background-color: #1F0A71;
+  background-color: #831f82;
   color: #ffffff;
 }
 
@@ -8126,7 +8125,6 @@ color:rgba(89, 89, 89, 0.66);
 .picker__close, .picker__today {
   font-size: 1.1rem;
   padding: 0 1rem;
-  color: #1F0A71;
 }
 
 .picker__nav--prev:before,
@@ -8146,7 +8144,7 @@ color:rgba(89, 89, 89, 0.66);
 }
 
 button.picker__today:focus, button.picker__clear:focus, button.picker__close:focus {
-  background-color: #6a4ad5;
+  background-color: #e7e2f7;
 }
 
 /* ==========================================================================

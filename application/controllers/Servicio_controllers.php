@@ -35,13 +35,23 @@ class Servicio_controllers extends CI_Controller {
 	}
 	public function Clientes()
 	{
-		//$this->servicios_model->Clientes($_POST['mVendedor']);
-		$this->servicios_model->Clientes("50");
+		$this->servicios_model->Clientes($_POST['mVendedor']);
+		//$this->servicios_model->Clientes("50");
+	}
+
+	public function allClientes()
+	{
+		$this->servicios_model->allClientes();
 	}
 	public function Historial()
 	{
 		$this->servicios_model->Historial($_POST['mVendedor']);
 		//$this->servicios_model->Historial("50");
+	}
+
+	public function allHistorial()
+	{
+		$this->servicios_model->allHistorial();
 	}
 	public function Puntos()
 	{
@@ -73,7 +83,7 @@ class Servicio_controllers extends CI_Controller {
 	}
 	public function insertPedidos()
 	{		
-		//$PEDIDOS = '[{"detalles":{"nameValuePairs":{"ID0":"50P0507172","ARTICULO0":"6IN00002","DESC0":"PH PAPIEL ECO PLUS B 24/1","CANT0":"34.0","TOTAL0":"349.41","IVA0":"0","DESCUE0":"12","ID1":"50P0507172","ARTICULO1":"6IN00046","DESC1":"PH NATURAL PLUS - 24/1","CANT1":"12.0","TOTAL1":"192","IVA1":"0","DESCUE1":"0","ID2":"50P0507172","ARTICULO2":"6IN00047","DESC2":"P.H PAPIEL INSTITUCIONAL NATURAL  6/1","CANT2":"5.0","TOTAL2":"210.9","IVA2":"0","DESCUE2":"0"}},"mCliente":"CL008411","mComentario":"","mEstado":"0","mFecha":"2017-07-05 16:07:15","mIdPedido":"50P0507172","mNombre":"IZAYANA SUYEN VALLE LOPEZ","mPrecio":"15238.44","mVendedor":"50"}]';
+		//$PEDIDOS = '[{"detalles":{"nameValuePairs":{"ID0":"52P2","ARTICULO0":"6IN00002","DESC0":"PH PAPIEL ECO PLUS B 24/1","CANT0":"2.0","TOTAL0":"349.41","IVA0":"0","DESCUE0":"10"}},"mCliente":"CL005491","mComentario":" 1 Articulo","mEstado":"1","mFecha":"2017-07-13 19:20:45","mIdPedido":"52P2","mNombre":"ASMINIA CHAVARRIA BAEZ","mNuevo":"0","mPrecio":"698.82","mVendedor":"52"},{"detalles":{"nameValuePairs":{"ID1":"52P3","ARTICULO1":"6IN00046","DESC1":"PH NATURAL PLUS - 24/1","CANT1":"3.0","TOTAL1":"192","IVA1":"0","DESCUE1":"0"}},"mCliente":"CL000217","mComentario":" 1 Articulo","mEstado":"1","mFecha":"2017-07-13 19:21:00","mIdPedido":"52P3","mNombre":"BENIGNO OCON MACHADO","mNuevo":"0","mPrecio":"576.0","mVendedor":"52"},{"detalles":{"nameValuePairs":{"ID2":"52P4","ARTICULO2":"6IN00010","DESC2":"PH PAPIEL ECO PLUS B 6/4","CANT2":"12.0","TOTAL2":"338.82","IVA2":"0","DESCUE2":"10"}},"mCliente":"CL000120","mComentario":"ASDASDASDASD 1 Articulo","mEstado":"1","mFecha":"2017-07-13 19:22:32","mIdPedido":"52P4","mNombre":"ANDRES IVAN FLORES RIOS","mNuevo":"0","mPrecio":"4065.84","mVendedor":"52"},{"detalles":{"nameValuePairs":{"ID3":"54P2","ARTICULO3":"6IN00002","DESC3":"PH PAPIEL ECO PLUS B 24/1","CANT3":"2.0","TOTAL3":"349.41","IVA3":"0","DESCUE3":"10"}},"mCliente":"CL007710","mComentario":" 1 Articulo","mEstado":"1","mFecha":"2017-07-13 19:27:13","mIdPedido":"54P2","mNombre":"ALVARO ISAAC PINEDA VALLEJO","mNuevo":"0","mPrecio":"698.82","mVendedor":"54"}]';
 		$this->servicios_model->insertPedidos($_POST['PEDIDOS']);
 		//$this->servicios_model->insertPedidos($PEDIDOS);
 	}

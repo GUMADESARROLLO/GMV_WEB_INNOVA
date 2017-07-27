@@ -65,6 +65,17 @@ class servicios_model extends CI_Model
     }
 
 
+    public function nombreVem($Vendedor)
+    {
+        $conn = $this->OPen_database_odbcSAp();        
+        $query = 'SELECT TOP 1 "NOMBRE" from '.$this->BD.'.SPINN_VENDEDORES WHERE "CODIGO" = '."'".$Vendedor."'".'';
+        
+        $resultado =  @odbc_exec($conn,$query);
+
+        while ($key = @odbc_fetch_array($resultado)){
+            return $key['NOMBRE'];
+        }
+    }
     public function Clientes($Vendedor)
     {
 
@@ -92,6 +103,31 @@ class servicios_model extends CI_Model
         echo json_encode($rtnCliente);
     }
 
+    public function allClientes()
+    {
+        $conn = $this->OPen_database_odbcSAp();        
+        $query = 'SELECT * from '.$this->BD.'.GMV_CLIENTES';
+        //$query = 'SELECT * from '.$this->BD.'.GMV_CLIENTES ';
+
+        $resultado =  @odbc_exec($conn,$query);
+        $rtnCliente=array();
+        $i=0;
+
+        while ($key = @odbc_fetch_array($resultado)){
+            $rtnCliente['results'][$i]['mCliente']      = $key['CODIGO'];
+            $rtnCliente['results'][$i]['mNombre']       = utf8_encode($key['NOMBRE']);
+            $rtnCliente['results'][$i]['mDireccion']    = utf8_encode($key['DIRECCION']);
+            $rtnCliente['results'][$i]['mRuc']          = utf8_encode($key['RUC']);
+            $rtnCliente['results'][$i]['mGrupo']        = utf8_encode($key['GRUPO']);
+            $rtnCliente['results'][$i]['mLista']        = utf8_encode($key['LISTA']);
+            $rtnCliente['results'][$i]['mCredito']      = number_format($key['CREDITO'],2, '.', '');
+            $rtnCliente['results'][$i]['mSaldo']        = number_format($key['SALDO'],2, '.', '');
+            $rtnCliente['results'][$i]['mDisponible']   = number_format($key['DISPONIBLE'],2, '.', '');
+
+            $i++;
+        }
+        echo json_encode($rtnCliente);
+    }
     public function porcentaje($actual,$meta)
     {
         if ($meta != 0) {
@@ -123,6 +159,27 @@ class servicios_model extends CI_Model
         }
         echo json_encode($rtnCliente);
         $this->sqlsrv->close();
+    }
+
+    public function allHistorial()
+    {
+        $i=0;
+        $rtnCliente=array();
+        $conn = $this->OPen_database_odbcSAp();        
+        $query = 'SELECT * from '.$this->BD.'.GMV_HTSCOMPRA_3M';
+        
+        $resultado =  @odbc_exec($conn,$query);
+
+        while ($key = @odbc_fetch_array($resultado)){
+            $rtnCliente['results'][$i]['mArticulo']    = $key['CODARTICULO'];
+            $rtnCliente['results'][$i]['mNombre']      = utf8_encode($key['NOMBRE']);
+            $rtnCliente['results'][$i]['mCantidad']    = number_format($key['CANTIDAD'],0);
+            $rtnCliente['results'][$i]['mFecha']      = $this->formatFechaPHP($key['FECHA']);
+            $rtnCliente['results'][$i]['mCliente']     = utf8_encode($key['CODCLIENTE']);
+            $rtnCliente['results'][$i]['mVendedor']    = $key['CODVENDEDOR'];
+            $i++;
+        }
+        echo json_encode($rtnCliente);
     }
     private function Cumple($Codigo)
     {
@@ -175,9 +232,19 @@ class servicios_model extends CI_Model
         $this->sqlsrv->close();
     }*/
     public function Puntos($Vendedor){
-
         $conn = $this->OPen_database_odbcSAp();
-        $query = 'SELECT * from '.$this->BD.'.SPINN_TTFACTURAS_PUNTOS WHERE "COD_VENDEDOR" = '."'".$Vendedor."'".'';
+        $codigos = "";
+        $consulta = 'SELECT "CardCode" from '.$this->BD.'.OCRD WHERE "SlpCode" = '."'".$Vendedor."'".'';
+
+        $resultado =  @odbc_exec($conn,$consulta);
+        while ($fila = @odbc_fetch_array($resultado)){
+            $codigos .= "'".$fila['CardCode']."',";            
+        }
+        //echo substr($codigos,0, -1);
+        //$query = 'SELECT * from '.$this->BD.'.SPINN_TTFACTURAS_PUNTOS WHERE "COD_VENDEDOR" = '."'".$Vendedor."'".'';
+        $query = 'SELECT * from '.$this->BD.'.SPINN_TTFACTURAS_PUNTOS WHERE "COD_CLIENTE" IN ('.substr($codigos,0, -1).')';
+
+        //echo 'SELECT * from '.$this->BD.'.SPINN_TTFACTURAS_PUNTOS WHERE "COD_CLIENTE" IN ('.substr($codigos,0, -1).')';
         $resultado =  @odbc_exec($conn,$query);
         $i=0;
         $rtnCliente=array();
@@ -412,20 +479,19 @@ class servicios_model extends CI_Model
             $cadena .= "'".$key['mIdPedido']."',";
 
             if ($query->num_rows() == 0){
-                $this->db->query("UPDATE llaves SET pedido = pedido+1 WHERE RUTA ='".$key['mVendedor']."'");
+                $this->db->query("UPDATE llaves SET pedido = pedido+1 WHERE CODIGO ='".$key['mVendedor']."'");
 
                 $insert = $this->db->query('CALL SP_pedidos ("'.$key['mIdPedido'].'","'.$key['mVendedor'].'","'.$key['mCliente'].'",
                                             "'.str_replace("'", "", $key['mNombre']).'","'.$key['mFecha'].'","'.$key['mPrecio'].'","'.$key['mEstado'].'",
-                                            "'.$resp.'","'.$key['mComentario'].'")');
+                                            "'.$resp.'","'.$key['mComentario'].'","'.$key['mNuevo'].'")');
 
 
-                for ($e=0; $e <(count($key['detalles']['nameValuePairs']))/8; $e++){
+                for ($e=0; $e <(count($key['detalles']['nameValuePairs']))/7; $e++){
                     $datos = array('IDPEDIDO'   => $key['detalles']['nameValuePairs']['ID'.$i],
                                    'ARTICULO'   => $key['detalles']['nameValuePairs']['ARTICULO'.$i],
                                    'DESCRIPCION'=> str_replace("'", "", $key['detalles']['nameValuePairs']['DESC'.$i]),
                                    'CANTIDAD'   => $key['detalles']['nameValuePairs']['CANT'.$i],
                                    'TOTAL'      => number_format(str_replace(",", "", $key['detalles']['nameValuePairs']['TOTAL'.$i]),2),
-                                   //'BONIFICADO' => $key['detalles']['nameValuePairs']['BONI'.$i],
                                    'IVA' => $key['detalles']['nameValuePairs']['IVA'.$i],
                                    'DESCUENTO' => $key['detalles']['nameValuePairs']['DESCUE'.$i]
                                 );
@@ -433,7 +499,7 @@ class servicios_model extends CI_Model
                     $i++;
                 }
             }else{
-                for ($e=0; $e <(count($key['detalles']['nameValuePairs']))/6; $e++){
+                for ($e=0; $e <(count($key['detalles']['nameValuePairs']))/7; $e++){
                     $i++;
                 }
             }
@@ -476,8 +542,10 @@ class servicios_model extends CI_Model
                             );
                 $insert= $this->db->insert('RAZON',$datos);
 
-                
-                for ($e=0; $e <(count($key['detalles']['nameValuePairs']))/6; $e++){
+                if ($insert) {
+                    $this->db->query("UPDATE llaves SET RAZON = RAZON+1 WHERE CODIGO ='".$key['mVendedor']."'");
+                }
+                for ($e=0; $e <(count($key['detalles']['nameValuePairs']))/4; $e++){
                     $datos2 = array('IdRazon'   => $key['detalles']['nameValuePairs']['IdRazon'.$i],
                                    'IdAE'   => $key['detalles']['nameValuePairs']['IdAE'.$i],
                                    'Actividad'=> $key['detalles']['nameValuePairs']['Actividad'.$i],
@@ -502,17 +570,21 @@ class servicios_model extends CI_Model
         $rtnPedido = array();
         foreach(json_decode($Post, true) as $key){
             $this->db->where('IDPEDIDO',$key['mIdPedido']);
-            $this->db->select('IDPEDIDO,ESTADO');
-            $query = $this->db->get('pedido');
+            $this->db->select('IDPEDIDO,ESTADO,COMENTARIO,CONFIRMACION');
+            $query = $this->db->get('view_mispedidos');
             if ($query->num_rows()>0) {
                 foreach ($query->result_array() as $key) {
                     $rtnPedido['results'][$i]['mIdPedido']  = $key['IDPEDIDO'];
                     $rtnPedido['results'][$i]['mEstado']    = $key['ESTADO'];
+                    $rtnPedido['results'][$i]['mAnulacion']    = $key['COMENTARIO'];
+                    $rtnPedido['results'][$i]['mConfirmacion']    = $key['CONFIRMACION'];
                     $i++;
                 }
             }else{
-                    $rtnPedido['results'][$i]['mIdPedido']  = " ";
-                    $rtnPedido['results'][$i]['mEstado']    = " ";
+                    $rtnPedido['results'][$i]['mIdPedido']  = "";
+                    $rtnPedido['results'][$i]['mEstado']    = "";
+                    $rtnPedido['results'][$i]['mAnulacion'] = "";
+                    $rtnPedido['results'][$i]['mConfirmacion'] = "";
             }
         }
         echo json_encode($rtnPedido);
@@ -599,10 +671,11 @@ class servicios_model extends CI_Model
                 );
                 $query = $this->db->insert('clientes', $Clientes);
                 if ($query) {
-                    $consulta = $this->db->query("SELECT CLIENTE FROM llaves WHERE RUTA ='".$key['mVendedor']."'");
+                    /*$consulta = $this->db->query("SELECT CLIENTE FROM llaves WHERE RUTA ='".$key['mVendedor']."'");
                     $datos = array('CLIENTE' => $consulta->result_array()[0]['CLIENTE']+1);
                     $this->db->where('RUTA',$key['mVendedor']);
-                    $this->db->update('llaves',$datos);
+                    $this->db->update('llaves',$datos);*/
+                    $query = $this->db->query("UPDATE llaves SET CLIENTE = CLIENTE+1 WHERE CODIGO ='".$key['mVendedor']."'");
                     $bandera = $query;
                 }                
             }

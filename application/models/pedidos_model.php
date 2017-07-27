@@ -6,6 +6,7 @@ class Pedidos_model extends CI_Model
     public function __construct(){
         parent::__construct();
         $this->load->database();
+        $this->load->model('servicios_model');
     }
     public function pedidos()
     {
@@ -24,9 +25,60 @@ class Pedidos_model extends CI_Model
             $query = $this->db->get('pedido');
         }        
         if ($query->num_rows()>0) {
-            return $query->result_array();
+            $i=0;
+            $json = array();
+            foreach($query->result_array() as $key){
+                $json['data'][$i]['IDPEDIDO'] = $key['IDPEDIDO'];
+                $json['data'][$i]['VENDEDOR'] = $this->servicios_model->nombreVem($key['VENDEDOR']);
+                $json['data'][$i]['RESPONSABLE'] = $key['RESPONSABLE'];
+                $json['data'][$i]['CLIENTE'] = $key['CLIENTE'];
+                $json['data'][$i]['NOMBRE'] = $key['NOMBRE'];
+                $json['data'][$i]['FECHA'] = $key['FECHA_CREADA'];
+                $json['data'][$i]['MONTO'] = number_format($key['MONTO'],2);
+                switch ($key['ESTADO']) {
+                                        case '1':
+                                            $estado2 = '<i class="material-icons">check</i>';
+                                            break;
+                                        case '2':
+                                            $estado2 = '<i class="material-icons">done_all</i>';
+                                            break;
+                                        case '3':
+                                            $estado2 = '<i class="green-text material-icons">done_all</i>';
+                                            break;
+                                        case '4':
+                                            $estado2 = '<i class="red-text material-icons">done_all</i>';
+                                            break;
+                                        default:
+                                            $estado2 = 'ERROR AL OBTENER ESTADO';
+                                            break;
+                                    }
+                                    switch ($key['ESTADO']) {
+                                        case '1':
+                                            $estado = '<p class="noMargen">PENDIENTE</p>';
+                                            break;
+                                        case '2':
+                                            $estado = '<p class="noMargen">VISUALIZADO</p>';
+                                            break;
+                                        case '3':
+                                            $estado = '<p class="green-text noMargen">PROCESADO</p>';
+                                            break;
+                                        case '4':
+                                            $estado = '<p class="red-text noMargen">ANULADO</p>';
+                                            break;
+                                        default:
+                                            $estado = 'ERROR AL OBTENER ESTADO';
+                                            break;
+                                    }
+                $json['data'][$i]['ESTADO'] = $estado;
+                $json['data'][$i]['ESTADO2'] = $estado2;
+                $json['data'][$i]['VER'] = "<a  onclick='getview(".'"'.$key['IDPEDIDO'].'"'.",".'"'.$key['NOMBRE']." ".$key['CLIENTE'].'"'.",".'"'.$key['VENDEDOR'].'"'.",".'"'.$key['ESTADO'].'"'.")' href='#' class='noHover'><i class='material-icons'>&#xE417;</i></a>";
+                $i++;
+            }
+            return $json;
+            //return $query->result_array();
         }return 0;
     }
+
     public function detallePedido($id){
         $i=0;
         $json = array();
@@ -52,10 +104,17 @@ class Pedidos_model extends CI_Model
                 $json['data'][$i]['DESCRIPCION'] = '<p class="bold">'.$key['DESCRIPCION'].'</p>';
                 $json['data'][$i]['CANTIDAD'] = number_format($key['CANTIDAD'],0);
                 $json['data'][$i]['PRECIO'] = $key['TOTAL'];
-                $json['data'][$i]['TOTAL'] = number_format($key['CANTIDAD']*str_replace($rempla, '', $key['TOTAL']),2);
-                //number_format($key['CANTIDAD']*$key['TOTAL'],2,',','');
-                //$json['data'][$i]['TOTAL'] = str_replace($rempla, '', $key['TOTAL'])."asda";
-                $json['data'][$i]['BONIFICADO'] = $key['BONIFICADO'];
+                $json['data'][$i]['IVA'] = $key['IVA'];
+                $json['data'][$i]['DESCUENTO'] = $key['DESCUENTO'];
+                //$SUBTOTAL = $key['CANTIDAD'] * str_replace($rempla, '', $key['TOTAL']);
+                $SUBTOTAL = $key['CANTIDAD']*$key['TOTAL'];
+                
+                $IVA = $SUBTOTAL * ($key['IVA']/100);
+                $DESCU = $SUBTOTAL * ($key['DESCUENTO']/100);
+                //$json['data'][$i]['TOTAL'] = number_format($key['CANTIDAD']*str_replace($rempla, '', $key['TOTAL']),2);
+                $json['data'][$i]['TOTAL'] = ($SUBTOTAL+$IVA)-$DESCU;
+                //$json['data'][$i]['TOTAL'] = $key['CANTIDAD']*$key['TOTAL'];
+                
                 $i++;
             }
         }
@@ -252,7 +311,7 @@ class Pedidos_model extends CI_Model
                                             break;
                                     }
                 $json['data'][$i]['IDPEDIDO'] = '<p class="negra noMargen">'.$key['IDPEDIDO'].'</p>';
-                $json['data'][$i]['VENDEDOR'] = $key['VENDEDOR'];                
+                $json['data'][$i]['VENDEDOR'] = $this->servicios_model->nombreVem($key['VENDEDOR']);
                 $json['data'][$i]['RESPONSABLE'] = $key['RESPONSABLE'];
                 $json['data'][$i]['CLIENTE'] = $key['CLIENTE'];
                 $json['data'][$i]['NOMBRE'] = $key['NOMBRE'];

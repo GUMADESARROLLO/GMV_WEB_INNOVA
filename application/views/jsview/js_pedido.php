@@ -82,8 +82,9 @@
                     { "data": "DESCRIPCION" },
                     { "data": "CANTIDAD" },
                     { "data": "PRECIO" },
-                    { "data": "TOTAL" },
-                    { "data": "BONIFICADO" }
+                    { "data": "IVA" },
+                    { "data": "DESCUENTO" },
+                    { "data": "TOTAL" }
               ]
             });
             $('#TbDetalleFactura').on( 'init.dt', function () {
@@ -92,11 +93,14 @@
                 $("#datosPedido").show();
                 var total=0;
                     obj = $('#TbDetalleFactura').DataTable();
-                    obj.rows().data().each( function (index,value) {                        
-                        var subtotal = obj.row(value).data().TOTAL.replace(",", "");
-                        subtotal = parseFloat(obj.row(value).data().TOTAL.replace(",", ""));
-                        //total += obj.row(value).data().TOTAL.replace(",", "");
-                        total += subtotal;
+                    obj.rows().data().each( function (index,value) {
+                        /*var subtotal = obj.row(value).data().TOTAL;
+                        var iva = subtotal *(parseFloat(obj.row(value).data().IVA/100));
+                        var desc = subtotal * (parseFloat(obj.row(value).data().DESCUENTO/100));
+                        console.log(desc);*/
+                        
+                        //total +=  (subtotal + iva) - desc;
+                        total += obj.row(value).data().TOTAL;//.replace(",", "");
                     });
                 $('#total').text(" C$ "+addCommas(total));
             }).dataTable();
@@ -118,7 +122,7 @@
             });
     }
     $("#btnProcesar").click(function(){
-        if ($("#codPedido").text().length>10 && $("#codPedido").text()!=""){
+        if ($("#codPedido").text().length>2 && $("#codPedido").text()!=""){
             swal({
               title: "Se marcara el pedido como procesado!",
               text: "Ingrese un comentario",
@@ -157,23 +161,6 @@
                         }
                     });
             });
-
-
-            /*,
-            function(isConfirm){
-              if (isConfirm) {
-                $.ajax({
-                url: "ajaxUpdatePedido/3/"+ $("#codPedido").text(),
-                type: "post",
-                async:true,
-                success:
-                function(clsAplicados){
-                    swal("Procesado!", "El pedido ha sido marcado como procesado.", "success");
-                    setInterval(function(){ $(location).attr('href',"pedidos"); }, 1500);                    
-                    }
-                });
-              }
-            });*/
         }
     });
     $("#btnAnular").click(function(){

@@ -8,7 +8,7 @@
     
 
     <div class="row center">        
-            <a href="#" onclick="FiltrarReporte('PEDIDOS POR VENDEDOR','pedidos_por_vendedor')" class=" IconBlue ">
+            <a href="#" onclick="FiltrarReporte('PEDIDOS POR VENDEDOR','pedidos_por_vendedor')" class="">
                 <i class="medium material-icons iconoCenter">person_add</i>
                 <p class="TextIconos">PEDIDOS POR VENDEDOR</p>
             </a>

@@ -323,8 +323,8 @@ _:-ms-input-placeholder, :root .demo-graph {
     margin-top: 35px;
 }
 #contenedorL{
-    /*background-color: #263369;*/
-    background: url('/GMV_WEB/assets/img/hwebback2.png')  #7a2080;
+    background-color: #831f82!important;
+    background: url('/GMV_WEB_INNOVA/assets/img/textura.png');
 }
 #nombre{
     font-family: 'robotoblack';
@@ -474,7 +474,7 @@ _:-ms-input-placeholder, :root .demo-graph {
 .Btnadd{
     text-align: center;
     border-radius: 20px;
-    background: #1F0A71;
+    background: #831f82;
     font-family: 'robotoregular';
     font-weight: 500;
     font-size: 13px;
@@ -501,7 +501,7 @@ _:-ms-input-placeholder, :root .demo-graph {
 }
 .Btnadd:hover
 {
-    background:#866FD5;
+    background:#bb85ba;
         color: #fff;
     
 }
@@ -767,7 +767,7 @@ table th {
     color: #6a4ad5;
 }
 .TextIconos{
-    color: #6a4ad5;
+    color: #831f82;
     font-family: 'robotoblack';
     font-size: 12px;
     text-align: center;
@@ -840,8 +840,8 @@ table th {
 .fecha{
     font-family: 'robotoblack';
     font-size: 14px;
-    color: #1F0A71;
-    border-bottom: 2px solid #1F0A71;
+    color: #831f82;
+    border-bottom: 2px solid #831f82;
     text-align: center;
 }
 .rango{
@@ -1075,7 +1075,7 @@ li img{
 }
 .redondo{
     border-radius: 4px;
-    background-color: #263369;
+    background-color: #831f82;
 }
 #modalIMG{
   width: 30%;
