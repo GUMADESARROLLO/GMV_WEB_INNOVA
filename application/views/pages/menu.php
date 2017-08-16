@@ -47,6 +47,7 @@
                 break;
                 case '5':
                   $menu = '<a href="Main"><li href="Main"><i class="material-icons">home</i> inicio</li></a>
+                           <a href="monitoreo"><li href="monitoreo"><i class="material-icons">timeline</i> monitoreo</li></a>
                            <a href="pedidos"><li href="pedidos"><i class="material-icons">equalizer</i> pedidos</li></a>
                            <a href="ClientesWeb"><li href="ClientesWeb"><i class="material-icons">group_add</i> Clientes</li></a>
                            <a href="reportes"><li href="reportes"><i class="material-icons">insert_chart</i> reportes</li></a>

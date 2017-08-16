@@ -73,7 +73,7 @@ class servicios_model extends CI_Model
         $resultado =  @odbc_exec($conn,$query);
 
         while ($key = @odbc_fetch_array($resultado)){
-            return $key['NOMBRE'];
+            return utf8_encode($key['NOMBRE']);
         }
     }
     public function Clientes($Vendedor)

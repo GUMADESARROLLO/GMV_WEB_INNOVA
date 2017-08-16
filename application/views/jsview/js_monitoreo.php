@@ -139,7 +139,7 @@ function getDetalle (ruta,texto,tipo) {
                 console.log(msg);
                 mensaje(msg,"error");
             });
-        }else{mensaje("SELECCIONE UN RANGO DE FECHAS","error");}
+        }else{mensaje("SELECCIONE UN VENDEDOR","error");}
 }
 
     function getCliente (ruta) {
