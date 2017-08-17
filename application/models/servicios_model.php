@@ -704,5 +704,44 @@ class servicios_model extends CI_Model
         }
         echo json_encode($rtnClientes);
     }
+    public function imVendedores($Vendedor)
+    {
+        $i=0;
+        $rtnIndicadores=array();
+        $conn = $this->OPen_database_odbcSAp();
+        $queryVendedor = 'SELECT * from '.$this->BD.'.GMV_INDICADOR_FINAL WHERE "VENDEDOR" = '."'".$Vendedor."'".'';
+        $queryDetalle = 'SELECT * from '.$this->BD.'.GMV_INDICADOR_VENDEDORES WHERE "COD_VENDEDOR" = '."'".$Vendedor."'".'';
+
+        $rVendedor =  @odbc_exec($conn,$queryVendedor);
+
+        while ($key = @odbc_fetch_array($rVendedor)){
+            $rtnIndicadores['results'][$i]['mVendedor1']           = $key['VENDEDOR'];
+            $rtnIndicadores['results'][$i]['mNombre']             = $key['NOMBRE'];
+            $rtnIndicadores['results'][$i]['mNumCliente']         = $key['NUM_CLIENTE'];
+            $rtnIndicadores['results'][$i]['mTotalVenta1']         = number_format($key['TOTAL_VENTA'],2,'.','');
+            $rtnIndicadores['results'][$i]['mPromItem']           = number_format($key['PROM_ITEM'],2,'.','');
+            $rtnIndicadores['results'][$i]['mPRomedioFactura']    = number_format($key['PROMEDIO_FACTURA'],2,'.','');
+            $i++;
+
+
+        }
+        $i=1;
+        $rDetalles =  @odbc_exec($conn,$queryDetalle);
+        while ($k2 = @odbc_fetch_array($rDetalles)){
+            $rtnIndicadores['results'][$i]['mFecha']              = $k2['FECHA'];
+            $rtnIndicadores['results'][$i]['mFactura']            = $k2['FACTURA'];
+            $rtnIndicadores['results'][$i]['mCodCliente']         = $k2['COD_CLIENTE'];
+            $rtnIndicadores['results'][$i]['mCantidad']           = $k2['CANTIDAD'];
+            $rtnIndicadores['results'][$i]['mTotalVenta2']         = number_format($k2['TOTAL_VENTA'],2,'.','');
+            $rtnIndicadores['results'][$i]['mCliente']            = utf8_encode($k2['CLIENTE']);
+            $rtnIndicadores['results'][$i]['mArticulo']           = $k2['ARTICULO'];
+            $rtnIndicadores['results'][$i]['mDescripcion']        = $k2['DESCRIPCION'];
+            $rtnIndicadores['results'][$i]['mCodVendedor']        = $k2['COD_VENDEDOR'];
+            $rtnIndicadores['results'][$i]['mVendedor2']           = $k2['VENDEDOR'];
+            $i++;
+        }
+        echo json_encode($rtnIndicadores);
+
+    }
 }
 ?>

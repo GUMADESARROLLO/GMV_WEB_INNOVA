@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0b2c6d07-6372-4bc5-8b31-6942c6f88f13" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/routes.php" afterPath="$PROJECT_DIR$/application/config/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Servicio_controllers.php" afterPath="$PROJECT_DIR$/application/controllers/Servicio_controllers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/servicios_model.php" afterPath="$PROJECT_DIR$/application/models/servicios_model.php" />
+    </list>
+    <ignored path="GMV_WEB_INNOVA.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="GMV_WEB_INNOVA" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-25.192308">
+              <caret line="108" column="46" selection-start-line="108" selection-start-column="26" selection-end-line="108" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Servicio_controllers.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/Servicio_controllers.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.245283">
+              <caret line="151" column="47" selection-start-line="151" selection-start-column="47" selection-end-line="151" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="servicios_model.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/models/servicios_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9294606">
+              <caret line="744" column="5" selection-start-line="706" selection-start-column="3" selection-end-line="744" selection-end-column="5" />
+              <folding>
+                <marker date="1502987481696" expanded="true" signature="439:518" placeholder="..." />
+                <marker date="1502987481696" expanded="true" signature="720:795" placeholder="SELECT * fro..GMV_ARTICULOS..." />
+                <marker date="1502987481696" expanded="true" signature="2780:2877" placeholder="SELECT TOP 1..SPINN_VENDEDORES..." />
+                <marker date="1502987481696" expanded="true" signature="3176:3262" placeholder="SELECT * fro..GMV_CLIENTES..." />
+                <marker date="1502987481696" expanded="true" signature="4475:4515" placeholder="SELECT * fro..GMV_CLIENTES..." />
+                <marker date="1502987481696" expanded="true" signature="6209:6298" placeholder="SELECT * fro..GMV_HTSCOMPRA_3M..." />
+                <marker date="1502987481696" expanded="true" signature="7194:7238" placeholder="SELECT * fro..GMV_HTSCOMPRA_3M..." />
+                <marker date="1502987481696" expanded="true" signature="8079:8169" placeholder="SELECT conve..tblcumplenero..." />
+                <marker date="1502987481696" expanded="true" signature="10792:10874" placeholder="SELECT &quot;Card..OCRD..." />
+                <marker date="1502987481696" expanded="true" signature="11233:11336" placeholder="SELECT * fro..SPINN_TTFACTURAS_PUNTOS..." />
+                <marker date="1502987481696" expanded="true" signature="12737:12790" placeholder="SELECT Punto..rfactura..." />
+                <marker date="1502987481696" expanded="true" signature="18124:18195" placeholder="SELECT IDCOB..cobros..." />
+                <marker date="1502987481696" expanded="true" signature="20454:20542" placeholder="SELECT Respo..view_grupoasignacion..." />
+                <marker date="1502987481696" expanded="true" signature="20725:20793" placeholder="SELECT IDPED..pedido..." />
+                <marker date="1502987481696" expanded="true" signature="20938:21011" placeholder="UPDATE llave..." />
+                <marker date="1502987481696" expanded="true" signature="22591:22729" placeholder="SELECT IDPED..pedido..." />
+                <marker date="1502987481696" expanded="true" signature="24230:24301" placeholder="UPDATE llave..." />
+                <marker date="1502987481696" expanded="true" signature="25024:25094" placeholder="SELECT IdRaz..RAZON..." />
+                <marker date="1502987481696" expanded="true" signature="27217:27240" placeholder="SELECT * FRO..GMV_LOTES..." />
+                <marker date="1502987481696" expanded="true" signature="27894:27942" placeholder="SELECT * FRO..llaves..." />
+                <marker date="1502987481696" expanded="true" signature="29997:30072" placeholder="UPDATE llave..." />
+                <marker date="1502987481696" expanded="true" signature="31214:31303" placeholder="SELECT * fro..GMV_HTSCOMPRA_3M..." />
+                <marker date="1502987481696" expanded="true" signature="31330:31428" placeholder="SELECT * fro..GMV_INDICADOR_FINAL..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/application/config/routes.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Servicio_controllers.php" />
+        <option value="$PROJECT_DIR$/application/models/servicios_model.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="886" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GMV_WEB_INNOVA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GMV_WEB_INNOVA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GMV_WEB_INNOVA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GMV_WEB_INNOVA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GMV_WEB_INNOVA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GMV_WEB_INNOVA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GMV_WEB_INNOVA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GMV_WEB_INNOVA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GMV_WEB_INNOVA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GMV_WEB_INNOVA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GMV_WEB_INNOVA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0b2c6d07-6372-4bc5-8b31-6942c6f88f13" name="Default" comment="" />
+      <created>1502982658262</created>
+      <option name="number" value="Default" />
+      <updated>1502982658262</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.192308">
+          <caret line="108" column="46" selection-start-line="108" selection-start-column="26" selection-end-line="108" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Servicio_controllers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.245283">
+          <caret line="151" column="47" selection-start-line="151" selection-start-column="47" selection-end-line="151" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/servicios_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9294606">
+          <caret line="744" column="5" selection-start-line="706" selection-start-column="3" selection-end-line="744" selection-end-column="5" />
+          <folding>
+            <marker date="1502987481696" expanded="true" signature="439:518" placeholder="..." />
+            <marker date="1502987481696" expanded="true" signature="720:795" placeholder="SELECT * fro..GMV_ARTICULOS..." />
+            <marker date="1502987481696" expanded="true" signature="2780:2877" placeholder="SELECT TOP 1..SPINN_VENDEDORES..." />
+            <marker date="1502987481696" expanded="true" signature="3176:3262" placeholder="SELECT * fro..GMV_CLIENTES..." />
+            <marker date="1502987481696" expanded="true" signature="4475:4515" placeholder="SELECT * fro..GMV_CLIENTES..." />
+            <marker date="1502987481696" expanded="true" signature="6209:6298" placeholder="SELECT * fro..GMV_HTSCOMPRA_3M..." />
+            <marker date="1502987481696" expanded="true" signature="7194:7238" placeholder="SELECT * fro..GMV_HTSCOMPRA_3M..." />
+            <marker date="1502987481696" expanded="true" signature="8079:8169" placeholder="SELECT conve..tblcumplenero..." />
+            <marker date="1502987481696" expanded="true" signature="10792:10874" placeholder="SELECT &quot;Card..OCRD..." />
+            <marker date="1502987481696" expanded="true" signature="11233:11336" placeholder="SELECT * fro..SPINN_TTFACTURAS_PUNTOS..." />
+            <marker date="1502987481696" expanded="true" signature="12737:12790" placeholder="SELECT Punto..rfactura..." />
+            <marker date="1502987481696" expanded="true" signature="18124:18195" placeholder="SELECT IDCOB..cobros..." />
+            <marker date="1502987481696" expanded="true" signature="20454:20542" placeholder="SELECT Respo..view_grupoasignacion..." />
+            <marker date="1502987481696" expanded="true" signature="20725:20793" placeholder="SELECT IDPED..pedido..." />
+            <marker date="1502987481696" expanded="true" signature="20938:21011" placeholder="UPDATE llave..." />
+            <marker date="1502987481696" expanded="true" signature="22591:22729" placeholder="SELECT IDPED..pedido..." />
+            <marker date="1502987481696" expanded="true" signature="24230:24301" placeholder="UPDATE llave..." />
+            <marker date="1502987481696" expanded="true" signature="25024:25094" placeholder="SELECT IdRaz..RAZON..." />
+            <marker date="1502987481696" expanded="true" signature="27217:27240" placeholder="SELECT * FRO..GMV_LOTES..." />
+            <marker date="1502987481696" expanded="true" signature="27894:27942" placeholder="SELECT * FRO..llaves..." />
+            <marker date="1502987481696" expanded="true" signature="29997:30072" placeholder="UPDATE llave..." />
+            <marker date="1502987481696" expanded="true" signature="31214:31303" placeholder="SELECT * fro..GMV_HTSCOMPRA_3M..." />
+            <marker date="1502987481696" expanded="true" signature="31330:31428" placeholder="SELECT * fro..GMV_INDICADOR_FINAL..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

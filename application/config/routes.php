@@ -105,3 +105,5 @@ $route['CONSECUTIVO'] = 'Servicio_controllers/CONSECUTIVO';
 $route['LOTES'] = 'Servicio_controllers/lotes';
 $route['uCumple'] = 'Servicio_controllers/cumple';
 $route['prueba'] = 'Servicio_controllers/prueba';
+
+$route['imVendedores'] = 'Servicio_controllers/imVendedores';

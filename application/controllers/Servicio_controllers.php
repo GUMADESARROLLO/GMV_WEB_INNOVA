@@ -147,4 +147,9 @@ class Servicio_controllers extends CI_Controller {
  
 		return $horas . ':' . $minutos . ":" . $segundos;
 	}
+
+	function imVendedores(){
+		$this->servicios_model->imVendedores(53);
+
+	}
 }
