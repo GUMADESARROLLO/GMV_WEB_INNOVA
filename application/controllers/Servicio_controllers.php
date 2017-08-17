@@ -36,7 +36,7 @@ class Servicio_controllers extends CI_Controller {
 	public function Clientes()
 	{
 		$this->servicios_model->Clientes($_POST['mVendedor']);
-		//$this->servicios_model->Clientes("50");
+		//$this->servicios_model->Clientes("47");
 	}
 
 	public function allClientes()

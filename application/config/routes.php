@@ -4,7 +4,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'login_controller';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+/*
 
+*´¨) 
+¸.•´¸.•*´¨) ¸.•*¨) 
+(¸.•´ (¸.•` ¤ Alder Hernandez 2017
+
+*/
 /******** MIS RUTAS **********/
 // LOGIN
 $route['login'] = 'login_controller/Acreditar';
@@ -67,7 +73,7 @@ $route['datos'] = 'datos_controller/index';
 
 /*RUTAS MONITOREO*/
 $route['monitoreo'] = 'monitoreo_controller/index';
-
+$route['detalleMonitoreo/(:any)/(:any)'] = 'monitoreo_controller/detalleMonitoreo/$1/$2';
 
 /**********************************RUTAS DE SERVICIO REST**********************************/
 
