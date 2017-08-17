@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2017-08-16 17:40:45
+Date: 2017-08-17 09:07:19
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -588,7 +588,7 @@ CREATE TABLE `usuario` (
   `Rol` int(1) DEFAULT NULL COMMENT '1- VENDEDOR\r\n2- SAC \r\n3- ADMIN SAC \r\n4- SUPERVISOR \r\n5- ADMINISTRADOR',
   `Activo` bit(1) DEFAULT NULL,
   PRIMARY KEY (`IdUser`)
-) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of usuario
@@ -607,6 +607,7 @@ INSERT INTO `usuario` VALUES ('11', 'HMORALES', '50', 'HINDLEY MORALES OSUNA', '
 INSERT INTO `usuario` VALUES ('12', 'GANTONIO', '52', 'GERARDO ANTONIO CARIAS ESPINOZA', 'EP9731', '1', '');
 INSERT INTO `usuario` VALUES ('13', 'KMARINA', '54', 'KATHERINE MARINA PEREZ GONZALES', 'EC2843', '1', '');
 INSERT INTO `usuario` VALUES ('15', 'gventas', '99999', 'Alejandro Paredes', 'gv123', '1', '');
+INSERT INTO `usuario` VALUES ('16', 'gerencia', '7777', 'Fabricio', 'gerencia!2017', '6', '');
 
 -- ----------------------------
 -- Table structure for visitas

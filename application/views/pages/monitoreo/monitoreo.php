@@ -18,7 +18,7 @@
                         else{
                             foreach ($datos as $key) {
                                 echo 
-                                "<option value=".$key['VENDEDOR'].">".$key['VENDEDOR']."</option>";
+                                "<option value=".$key['VENDEDOR'].">".utf8_encode($key['NOMBRE'])."</option>";
                             }
                         }
                 ?>
@@ -50,9 +50,9 @@
                                     <td class='negra'>".$key['VENDEDOR']."</td>
                                     <td class='negra'>".utf8_encode($key['NOMBRE'])."</td>
                                     <td>".$key['NUM_CLIENTE']."</td>
-                                    <td>".number_format($key['TOTAL_VENTA'],4)."</td>
+                                    <td>C$ ".number_format($key['TOTAL_VENTA'],4)."</td>
                                     <td>".number_format($key['PROM_ITEM'],4)."</td>
-                                    <td>".number_format($key['PROMEDIO_FACTURA'],4)."</td>
+                                    <td>C$ ".number_format($key['PROMEDIO_FACTURA'],4)."</td>
                                     <td>".$key['VTAS_ARTICULO']."</td>
                                     <td>".$key['VTAS_CLIENTE']."</td>
                                 </tr>";

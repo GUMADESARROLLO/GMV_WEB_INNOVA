@@ -76,8 +76,8 @@ class Monitoreo_model extends CI_Model
                 $json['columns'][3]['name'] = "DESCRIPCION";
                 $json['columns'][4]['data'] = "VENTA";
                 $json['columns'][4]['name'] = "VENTA";
-                $json['columns'][4]['data'] = "FACTURAS";
-                $json['columns'][4]['name'] = "FACTURAS";
+                $json['columns'][5]['data'] = "FACTURAS";
+                $json['columns'][5]['name'] = "FACTURAS";
                 echo json_encode($json);
             }
         }
@@ -105,13 +105,13 @@ class Monitoreo_model extends CI_Model
                 $json['columns'][1]['data'] = "VENDEDOR";
                 $json['columns'][1]['name'] = "VENDEDOR";
                 $json['columns'][2]['data'] = "COD_CLIENTE";
-                $json['columns'][2]['name'] = "COD_CLIENTE";
+                $json['columns'][2]['name'] = "COD CLIENTE";
                 $json['columns'][3]['data'] = "CLIENTE";
                 $json['columns'][3]['name'] = "CLIENTE";
                 $json['columns'][4]['data'] = "VENTA";
                 $json['columns'][4]['name'] = "VENTA";
-                $json['columns'][4]['data'] = "FACTURAS";
-                $json['columns'][4]['name'] = "FACTURAS";
+                $json['columns'][5]['data'] = "FACTURAS";
+                $json['columns'][5]['name'] = "FACTURAS";
                 echo json_encode($json);
             }
         }
