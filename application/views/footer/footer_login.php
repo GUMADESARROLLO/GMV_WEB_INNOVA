@@ -1,7 +1,7 @@
 <footer class="footer row">
         <div id="conTIcon" class="row center">
             <div  class="right col s12 m3 l3 offset-m5 offset-l6">
-                <img  src="<?PHP echo base_url();?>assets/img/log_unimark.png">
+                <img  src="<?PHP echo base_url();?>assets/img/innova_logo.png">
             </div>
         </div>
 </footer>
