@@ -149,7 +149,7 @@ class Servicio_controllers extends CI_Controller {
 	}
 
 	function imVendedores(){
-		$this->servicios_model->imVendedores(53);
+		$this->servicios_model->imVendedores($_POST['mVendedor']);
 
 	}
 }
