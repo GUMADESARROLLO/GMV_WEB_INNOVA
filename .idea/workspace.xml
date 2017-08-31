@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a3415a1-9d16-4fc8-9be7-f9592233e8f0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/header/header.php" afterPath="$PROJECT_DIR$/application/views/header/header.php" />
     </list>
     <ignored path="GMV_WEB_INNOVA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,46 +24,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Servicio_controllers.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/Servicio_controllers.php">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/header/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="151" column="44" selection-start-line="151" selection-start-column="32" selection-end-line="151" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.23985891">
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="servicios_model.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/models/servicios_model.php">
+      <file leaf-file-name="header_login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/header/header_login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.024896266">
-              <caret line="706" column="32" selection-start-line="706" selection-start-column="20" selection-end-line="706" selection-end-column="32" />
-              <folding>
-                <marker date="1502987481696" expanded="true" signature="439:518" placeholder="..." />
-                <marker date="1502987481696" expanded="true" signature="720:795" placeholder="SELECT * fro..GMV_ARTICULOS..." />
-                <marker date="1502987481696" expanded="true" signature="2780:2877" placeholder="SELECT TOP 1..SPINN_VENDEDORES..." />
-                <marker date="1502987481696" expanded="true" signature="3176:3262" placeholder="SELECT * fro..GMV_CLIENTES..." />
-                <marker date="1502987481696" expanded="true" signature="4475:4515" placeholder="SELECT * fro..GMV_CLIENTES..." />
-                <marker date="1502987481696" expanded="true" signature="6209:6298" placeholder="SELECT * fro..GMV_HTSCOMPRA_3M..." />
-                <marker date="1502987481696" expanded="true" signature="7194:7238" placeholder="SELECT * fro..GMV_HTSCOMPRA_3M..." />
-                <marker date="1502987481696" expanded="true" signature="8079:8169" placeholder="SELECT conve..tblcumplenero..." />
-                <marker date="1502987481696" expanded="true" signature="10792:10874" placeholder="SELECT &quot;Card..OCRD..." />
-                <marker date="1502987481696" expanded="true" signature="11233:11336" placeholder="SELECT * fro..SPINN_TTFACTURAS_PUNTOS..." />
-                <marker date="1502987481696" expanded="true" signature="12737:12790" placeholder="SELECT Punto..rfactura..." />
-                <marker date="1502987481696" expanded="true" signature="18124:18195" placeholder="SELECT IDCOB..cobros..." />
-                <marker date="1502987481696" expanded="true" signature="20454:20542" placeholder="SELECT Respo..view_grupoasignacion..." />
-                <marker date="1502987481696" expanded="true" signature="20725:20793" placeholder="SELECT IDPED..pedido..." />
-                <marker date="1502987481696" expanded="true" signature="20938:21011" placeholder="UPDATE llave..." />
-                <marker date="1502987481696" expanded="true" signature="22591:22729" placeholder="SELECT IDPED..pedido..." />
-                <marker date="1502987481696" expanded="true" signature="24230:24301" placeholder="UPDATE llave..." />
-                <marker date="1502987481696" expanded="true" signature="25024:25094" placeholder="SELECT IdRaz..RAZON..." />
-                <marker date="1502987481696" expanded="true" signature="27217:27240" placeholder="SELECT * FRO..GMV_LOTES..." />
-                <marker date="1502987481696" expanded="true" signature="27894:27942" placeholder="SELECT * FRO..llaves..." />
-                <marker date="1502987481696" expanded="true" signature="29997:30072" placeholder="UPDATE llave..." />
-                <marker date="1502987481696" expanded="true" signature="31214:31303" placeholder="SELECT * fro..GMV_INDICADOR_FINAL..." />
-                <marker date="1502987481696" expanded="true" signature="31330:31428" placeholder="SELECT * fro..GMV_INDICADOR_VENDEDORES..." />
-              </folding>
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -77,6 +53,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/application/views/footer/footer_login.php" />
+        <option value="$PROJECT_DIR$/application/views/pages/menu.php" />
+        <option value="$PROJECT_DIR$/application/views/header/header.php" />
       </list>
     </option>
   </component>
@@ -85,15 +63,12 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
-  <component name="PhpServers">
-    <servers />
-  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="886" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -121,6 +96,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -149,6 +125,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GMV_WEB_INNOVA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GMV_WEB_INNOVA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GMV_WEB_INNOVA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GMV_WEB_INNOVA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -167,7 +175,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -185,59 +193,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="header" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\GMV_WEB_INNOVA\assets\img" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
-      <BehatRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
-      <scripts />
-      <envs />
-      <method />
-    </configuration>
-  </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6a3415a1-9d16-4fc8-9be7-f9592233e8f0" name="Default" comment="" />
@@ -248,10 +227,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2980333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -270,14 +249,6 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-      <collection />
-    </option>
-  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -286,65 +257,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/controllers/Servicio_controllers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Servicio_controllers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="151" column="44" selection-start-line="151" selection-start-column="32" selection-end-line="151" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/servicios_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1502987481696" expanded="true" signature="439:518" placeholder="..." />
-            <marker date="1502987481696" expanded="true" signature="720:795" placeholder="SELECT * fro..GMV_ARTICULOS..." />
-            <marker date="1502987481696" expanded="true" signature="2780:2877" placeholder="SELECT TOP 1..SPINN_VENDEDORES..." />
-            <marker date="1502987481696" expanded="true" signature="3176:3262" placeholder="SELECT * fro..GMV_CLIENTES..." />
-            <marker date="1502987481696" expanded="true" signature="4475:4515" placeholder="SELECT * fro..GMV_CLIENTES..." />
-            <marker date="1502987481696" expanded="true" signature="6209:6298" placeholder="SELECT * fro..GMV_HTSCOMPRA_3M..." />
-            <marker date="1502987481696" expanded="true" signature="7194:7238" placeholder="SELECT * fro..GMV_HTSCOMPRA_3M..." />
-            <marker date="1502987481696" expanded="true" signature="8079:8169" placeholder="SELECT conve..tblcumplenero..." />
-            <marker date="1502987481696" expanded="true" signature="10792:10874" placeholder="SELECT &quot;Card..OCRD..." />
-            <marker date="1502987481696" expanded="true" signature="11233:11336" placeholder="SELECT * fro..SPINN_TTFACTURAS_PUNTOS..." />
-            <marker date="1502987481696" expanded="true" signature="12737:12790" placeholder="SELECT Punto..rfactura..." />
-            <marker date="1502987481696" expanded="true" signature="18124:18195" placeholder="SELECT IDCOB..cobros..." />
-            <marker date="1502987481696" expanded="true" signature="20454:20542" placeholder="SELECT Respo..view_grupoasignacion..." />
-            <marker date="1502987481696" expanded="true" signature="20725:20793" placeholder="SELECT IDPED..pedido..." />
-            <marker date="1502987481696" expanded="true" signature="20938:21011" placeholder="UPDATE llave..." />
-            <marker date="1502987481696" expanded="true" signature="22591:22729" placeholder="SELECT IDPED..pedido..." />
-            <marker date="1502987481696" expanded="true" signature="24230:24301" placeholder="UPDATE llave..." />
-            <marker date="1502987481696" expanded="true" signature="25024:25094" placeholder="SELECT IdRaz..RAZON..." />
-            <marker date="1502987481696" expanded="true" signature="27217:27240" placeholder="SELECT * FRO..GMV_LOTES..." />
-            <marker date="1502987481696" expanded="true" signature="27894:27942" placeholder="SELECT * FRO..llaves..." />
-            <marker date="1502987481696" expanded="true" signature="29997:30072" placeholder="UPDATE llave..." />
-            <marker date="1502987481696" expanded="true" signature="31214:31303" placeholder="SELECT * fro..GMV_INDICADOR_FINAL..." />
-            <marker date="1502987481696" expanded="true" signature="31330:31428" placeholder="SELECT * fro..GMV_INDICADOR_VENDEDORES..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/footer/footer_login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="100" selection-start-line="8" selection-start-column="100" selection-end-line="8" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/footer/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -367,55 +284,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/footer/footer_login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="100" selection-start-line="8" selection-start-column="100" selection-end-line="8" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/footer/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Servicio_controllers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="151" column="44" selection-start-line="151" selection-start-column="32" selection-end-line="151" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.089788735">
+          <caret line="3" column="77" selection-start-line="3" selection-start-column="77" selection-end-line="3" selection-end-column="77" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/servicios_model.php">
+    <entry file="file://$PROJECT_DIR$/application/views/pages/menu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.024896266">
-          <caret line="706" column="32" selection-start-line="706" selection-start-column="20" selection-end-line="706" selection-end-column="32" />
-          <folding>
-            <marker date="1502987481696" expanded="true" signature="439:518" placeholder="..." />
-            <marker date="1502987481696" expanded="true" signature="720:795" placeholder="SELECT * fro..GMV_ARTICULOS..." />
-            <marker date="1502987481696" expanded="true" signature="2780:2877" placeholder="SELECT TOP 1..SPINN_VENDEDORES..." />
-            <marker date="1502987481696" expanded="true" signature="3176:3262" placeholder="SELECT * fro..GMV_CLIENTES..." />
-            <marker date="1502987481696" expanded="true" signature="4475:4515" placeholder="SELECT * fro..GMV_CLIENTES..." />
-            <marker date="1502987481696" expanded="true" signature="6209:6298" placeholder="SELECT * fro..GMV_HTSCOMPRA_3M..." />
-            <marker date="1502987481696" expanded="true" signature="7194:7238" placeholder="SELECT * fro..GMV_HTSCOMPRA_3M..." />
-            <marker date="1502987481696" expanded="true" signature="8079:8169" placeholder="SELECT conve..tblcumplenero..." />
-            <marker date="1502987481696" expanded="true" signature="10792:10874" placeholder="SELECT &quot;Card..OCRD..." />
-            <marker date="1502987481696" expanded="true" signature="11233:11336" placeholder="SELECT * fro..SPINN_TTFACTURAS_PUNTOS..." />
-            <marker date="1502987481696" expanded="true" signature="12737:12790" placeholder="SELECT Punto..rfactura..." />
-            <marker date="1502987481696" expanded="true" signature="18124:18195" placeholder="SELECT IDCOB..cobros..." />
-            <marker date="1502987481696" expanded="true" signature="20454:20542" placeholder="SELECT Respo..view_grupoasignacion..." />
-            <marker date="1502987481696" expanded="true" signature="20725:20793" placeholder="SELECT IDPED..pedido..." />
-            <marker date="1502987481696" expanded="true" signature="20938:21011" placeholder="UPDATE llave..." />
-            <marker date="1502987481696" expanded="true" signature="22591:22729" placeholder="SELECT IDPED..pedido..." />
-            <marker date="1502987481696" expanded="true" signature="24230:24301" placeholder="UPDATE llave..." />
-            <marker date="1502987481696" expanded="true" signature="25024:25094" placeholder="SELECT IdRaz..RAZON..." />
-            <marker date="1502987481696" expanded="true" signature="27217:27240" placeholder="SELECT * FRO..GMV_LOTES..." />
-            <marker date="1502987481696" expanded="true" signature="27894:27942" placeholder="SELECT * FRO..llaves..." />
-            <marker date="1502987481696" expanded="true" signature="29997:30072" placeholder="UPDATE llave..." />
-            <marker date="1502987481696" expanded="true" signature="31214:31303" placeholder="SELECT * fro..GMV_INDICADOR_FINAL..." />
-            <marker date="1502987481696" expanded="true" signature="31330:31428" placeholder="SELECT * fro..GMV_INDICADOR_VENDEDORES..." />
-          </folding>
+        <state vertical-scroll-proportion="1.1693121">
+          <caret line="49" column="119" selection-start-line="49" selection-start-column="119" selection-end-line="49" selection-end-column="119" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/pages/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/header/header_login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/header/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23985891">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
