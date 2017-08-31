@@ -48,7 +48,7 @@ class Monitoreo_model extends CI_Model
         
         if ($TIPO=="1"){
             $query = 'SELECT "COD_VENDEDOR","VENDEDOR","ARTICULO","DESCRIPCION",
-                        SUM("TOTAL_VENTA") AS "VENTA",COUNT(DISTINCT "FACTURA") AS "FACTURAS"
+                        SUM("TOTAL_VENTA") AS "VENTA",SUM("CANTIDAD") AS "CANTIDAD",COUNT(DISTINCT "FACTURA") AS "FACTURAS"
                         FROM "SBO_INNOVA_INDUSTRIAS"."GMV_INDICADOR_VENDEDORES"
                         WHERE "COD_VENDEDOR" = '."'".$VENDEDOR."'".'
                         GROUP BY "ARTICULO","COD_VENDEDOR","VENDEDOR","DESCRIPCION"
@@ -62,7 +62,8 @@ class Monitoreo_model extends CI_Model
                 $json['data'][$i]['VENDEDOR'] = utf8_encode($fila['VENDEDOR']);
                 $json['data'][$i]['ARTICULO'] = utf8_encode($fila['ARTICULO']);
                 $json['data'][$i]['DESCRIPCION'] = utf8_encode($fila['DESCRIPCION']);
-                $json['data'][$i]['VENTA'] = $fila['VENTA'];
+                $json['data'][$i]['CANTIDAD'] = $fila['CANTIDAD'];
+                 $json['data'][$i]['VENTA'] = "C$ " . number_format($fila['VENTA'],2);
                 $json['data'][$i]['FACTURAS'] = $fila['FACTURAS'];
                 $i++;
             }
@@ -74,10 +75,12 @@ class Monitoreo_model extends CI_Model
                 $json['columns'][2]['name'] = "ARTICULO";
                 $json['columns'][3]['data'] = "DESCRIPCION";
                 $json['columns'][3]['name'] = "DESCRIPCION";
-                $json['columns'][4]['data'] = "VENTA";
-                $json['columns'][4]['name'] = "VENTA";
-                $json['columns'][5]['data'] = "FACTURAS";
-                $json['columns'][5]['name'] = "FACTURAS";
+                $json['columns'][4]['data'] = "CANTIDAD";
+                $json['columns'][4]['name'] = "CANTIDAD";
+                $json['columns'][5]['data'] = "VENTA";
+                $json['columns'][5]['name'] = "VENTA";
+                $json['columns'][6]['data'] = "FACTURAS";
+                $json['columns'][6]['name'] = "FACTURAS";
                 echo json_encode($json);
             }
         }
@@ -96,7 +99,7 @@ class Monitoreo_model extends CI_Model
                 $json['data'][$i]['VENDEDOR'] = utf8_encode($fila['VENDEDOR']);
                 $json['data'][$i]['COD_CLIENTE'] = $fila['COD_CLIENTE'];
                 $json['data'][$i]['CLIENTE'] = utf8_encode($fila['CLIENTE']);
-                $json['data'][$i]['VENTA'] = $fila['VENTA'];
+                $json['data'][$i]['VENTA'] = "C$ " . number_format($fila['VENTA'],2);
                 $json['data'][$i]['FACTURAS'] = $fila['FACTURAS'];
                 $i++;
             }

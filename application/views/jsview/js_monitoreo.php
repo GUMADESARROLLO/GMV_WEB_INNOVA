@@ -75,6 +75,8 @@ function getDetalle (ruta,texto,tipo) {
             $('#view').html('');
             $('#view').html('<table id="tblDetalleReportes" class="TblDatos center"><thead><tr></tr></thead></table>');
 
+                console.log(tipo)
+
             var data,
                 tableName= '#tblDetalleReportes',
                 columns,
