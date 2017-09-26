@@ -72,7 +72,6 @@ class Reportes_model extends CI_Model
             $json['columns'][11]['name'] = "NOV";
             $json['columns'][12]['data'] = "DIC";
             $json['columns'][12]['name'] = "DIC";
-        echo json_encode($json);
-        $this->sqlsrv->close();
+        echo json_encode($json);        
     }
 }
